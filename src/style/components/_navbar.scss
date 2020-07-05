@@ -1,0 +1,42 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 20px 0;
+  font-size: 13px;
+  border: #ccc 1px dotted;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 800px;
+  margin: auto;
+  background: linear-gradient(180deg, #257eef, #b6fbff),
+    url('../assets/img/bg.jpg') no-repeat center center/cover;
+  color: #fff;
+  font-weight: 800;
+}
+
+.main-nav .logo {
+  width: 45px;
+}
+
+.main-nav ul {
+  display: flex;
+}
+
+.main-nav ul li {
+  padding: 0 10px;
+}
+
+.main-nav ul li a {
+  padding-bottom: 2px;
+}
+
+.main-nav ul.main-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.main-menu li {
+  color: #fff !important;
+}

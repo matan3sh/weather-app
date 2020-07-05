@@ -1,0 +1,109 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5rem auto;
+  height: 25vh;
+  width: 500px;
+  background: linear-gradient(180deg, #83a4d4, #b6fbff),
+    url('../assets/img/bg.jpg') no-repeat center center/cover;
+  position: relative;
+  color: #fff;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  box-shadow: 1px 7px 11px -12px rgba(0, 0, 0, 0.75);
+}
+
+.wrapper-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  margin: 1rem;
+}
+
+.wrapper-header p {
+  margin: 0 2rem;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.wrapper-header p {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.wrapper-header > :first-child {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.wrapper-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.weather-specs-avg {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.weather-specs-current {
+  font-weight: 900 !important;
+  font-size: 2.5rem !important;
+}
+
+.weather-specs p {
+  text-align: left;
+}
+
+.weekly-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 1000px;
+  margin: auto;
+}
+
+.weather-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #83a4d4, #b6fbff),
+    url('../assets/img/bg.jpg') no-repeat center center/cover;
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 1px 7px 11px -12px rgba(0, 0, 0, 0.75);
+  width: 150px;
+  padding: 1rem;
+  position: relative;
+}
+
+.weather-card h3 {
+  font-size: 1rem;
+}
+
+.weather-card p {
+  font-size: 0.7rem;
+}
+
+.weather-card img {
+  width: 80%;
+  margin-bottom: 0.5rem;
+}
+
+.temp {
+  background-color: #666;
+  padding: 0.2rem 0.8rem;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 0.8rem;
+}
