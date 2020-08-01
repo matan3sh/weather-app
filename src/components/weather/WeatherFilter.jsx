@@ -1,32 +1,24 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-class WeatherFilter extends Component {
-  state = { txt: '' };
+const WeatherFilter = ({ onSearch }) => {
+  const [txt, setTxt] = useState('');
 
-  onChange = ({ target }) => {
-    const field = target.name;
-    const value = target.value;
-    this.setState(({ txt }) => ({ ...txt, [field]: value }));
-  };
-
-  onSubmit = (e) => {
+  const onSubmit = (e) => {
     e.preventDefault();
-    this.props.onSearch(this.state.txt);
+    onSearch(txt);
   };
 
-  render() {
-    return (
-      <form className='filter' onSubmit={this.onSubmit}>
-        <input
-          type='text'
-          name='txt'
-          placeholder='Search City...'
-          onChange={this.onChange}
-        />
-        <i className='fas fa-search' style={{ color: '#ccc' }}></i>
-      </form>
-    );
-  }
-}
+  return (
+    <form className='filter' onSubmit={onSubmit}>
+      <input
+        type='text'
+        name='txt'
+        placeholder='Search City...'
+        onChange={(e) => setTxt(e.target.value)}
+      />
+      <i className='fas fa-search' style={{ color: '#ccc' }}></i>
+    </form>
+  );
+};
 
 export default WeatherFilter;
